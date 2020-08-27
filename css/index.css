@@ -1,0 +1,145 @@
+body {
+            background-color: #181a1b;
+            color: #e8e6e3;
+			font-family: 'Alfa Slab One', cursive;
+        }
+		.titulo {
+			margin: auto;
+			text-align: center;
+			font-size: 48px;
+			font-family: Buenard, 'Alfa Slab One'
+
+		}
+        .links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
+        
+        .cronograma {
+            padding: 32px;
+        }
+        
+        .portfolio {
+            padding: 32px;
+        }
+		
+		a {
+		color: #e8e6e3;
+		font-size: 48px;
+		}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+body {
+    font-size: 24px;
+}
+.titulo h1 {
+    font-size: inherit;
+}
+.links .estudos_python {
+    font-size: inherit+2px;
+}
+.links .cronograma {
+    font-size: inherit+2px;
+}
+
+
+
+
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+.titulo {
+    font-size: 9px;
+}
+.links .cronograma {
+    padding: 1px;
+    font-size: 18px;
+}
+.links .estudos_python {
+    font-size: 18px;
+    float: none;
+}
+
+.links .portfolio {
+    padding: 1px;
+    font-size: 18px;
+    float: none;
+}
+.links {
+    padding: 0px;
+}
+
+
+
+
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	
+}
+
+/* iPad 3 (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (-webkit-min-device-pixel-ratio : 2),
+only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (min-resolution: 192dpi) { 
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+	
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+	
+}
+
+/* Retina displays ----------- */
+@media  only screen 
+and (-webkit-min-device-pixel-ratio : 2), 
+only screen 
+and (min-resolution: 192dpi) {
+
+}
