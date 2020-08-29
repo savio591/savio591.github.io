@@ -48,7 +48,7 @@ header {
     display: grid;
 }
 .logo {
-	
+	background-image: url("logo_header.png");
 	margin: 0 auto;
 	padding: 12.3px;
 }
