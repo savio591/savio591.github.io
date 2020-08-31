@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@600;700&display=swap');
 /* Cabeçalho css */
 
 header {
@@ -39,4 +39,66 @@ header {
 	cursor: pointer;
 	text-decoration: underline;
 	background-color: #fff95f;
+}
+
+.ct_principal {
+	background-color: #4e4e4e;
+	height: 635px;
+	padding: 75px;
+}
+
+.ct_vestidos {
+	background-color: #ff0066;
+	width: 100%;
+	height: 650px;
+}
+
+.ct_principal img {}
+
+.ct_principal_textos {
+  
+  width: 443px;
+  height: 443px;
+  float: right;
+  display: grid;
+}
+
+.ct_principal_textos h3 {
+  margin: auto;
+}
+
+.ct_principal_texto1 {
+  font-size: 57px;
+  font-family: "Cabin Condensed";
+  color: rgb(222, 222, 222);
+  font-weight: bold;
+  line-height: 1.284;
+  text-align: center;
+  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.13);
+  -webkit-transform: scale(0.99, 1.03);
+  width: auto;
+}
+
+.ct_principal_texto2 {
+  font-size: 90px;
+  font-family: "Cabin Condensed";
+  color: rgb(222, 222, 222);
+  font-weight: bold;
+  line-height: 0.86;
+  text-align: center;
+  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.13);
+  width: auto;
+  height: 166.352px;
+}
+
+.ct_principal_texto3 {
+  font-size: 31px;
+  font-family: "Cabin Condensed";
+  color: rgb(222, 222, 222);
+  font-weight: bold;
+  line-height: 2.527;
+  text-align: center;
+  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.13);
+  -moz-transform: scale(0.94, 1.03);
+  -webkit-transform: scale(0.94, 1.03);
 }
