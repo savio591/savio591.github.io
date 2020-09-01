@@ -105,3 +105,32 @@ header {
   -moz-transform: scale(0.94, 1.03);
   -webkit-transform: scale(0.94, 1.03);
 }
+@media (max-width: 828px){
+  .bl_nav li {
+	padding: 14px 0px;
+	font-family: 'Delius Swash Caps', cursive;
+  font-size: 1.3em;
+  color: rgb(255, 249, 95);
+  line-height: 1;
+  text-align: center;
+	position: relative;
+	margin: 0 auto;
+	float: right;
+}
+  
+  .bl_nav ul {
+    
+  height: inherit;
+  display: flex;
+  width: 46%;
+  margin: auto;
+  flex-direction: row-reverse;
+}
+  .bl_nav {
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+	height: 53px;
+	background-color: #555;
+}
+}
