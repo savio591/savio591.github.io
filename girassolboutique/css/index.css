@@ -183,7 +183,7 @@ header {
     margin: auto;
   }  
   .ct_principal_texto1 {
-  font-size: 31px;
+  font-size: 7.5vw;
   font-family: "Cabin Condensed";
   color: rgb(222, 222, 222);
   font-weight: bold;
@@ -193,7 +193,7 @@ header {
 }
 
   .ct_principal_texto2 {
-  font-size: 37px;
+  font-size: 10.2vw;
   font-family: "Cabin Condensed";
   color: rgb(222, 222, 222);
   /*! font-weight: bold; */
@@ -203,7 +203,7 @@ header {
 }
 
   .ct_principal_texto3 {
-  font-size: 20px;
+  font-size: 6.1vw;
   font-family: "Cabin Condensed";
   color: rgb(222, 222, 222);
   font-weight: bold;
