@@ -53,7 +53,10 @@ header {
 	height: 650px;
 }
 
-.ct_principal img {}
+.ct_principal img {
+  height: auto;
+  max-width: 755px;
+}
 
 .ct_principal_textos {
   
