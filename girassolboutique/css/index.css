@@ -211,8 +211,6 @@ header {
   }
   
   .ct_principal picture {
-    order: 2;
-    display: none;
   }
   
   .ct_principal_textos {
