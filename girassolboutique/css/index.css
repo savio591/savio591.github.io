@@ -106,18 +106,32 @@ header {
   -webkit-transform: scale(0.94, 1.03);
 }
 
+.ct_vestidos_bl_texto {
+  width: 292px;
+  height: 81px;
+  margin: auto;
+  padding: 15px
+}
 
-
-@media (max-width: 1344px){
-  .ct_principal img {
+.ct_vestidos_texto {
+  background-color: yellow;
+  font-size: 32px;
+  font-family: "Cabin Condensed";
+  color: rgb(255, 0, 102);
+  font-weight: bold;
+  line-height: 2.527;
+  text-align: center;
+  padding: 0px 20px;
+  margin: auto;
   height: auto;
-  width: 100%;
-  box-sizing: border-box;
-  position: relative;
 }
-}
-  
-@media (max-width: 1040px){
+
+
+
+
+
+@media (max-width: 1344px)
+{
   .bl_nav li {
 	padding: 14px 0px;
 	font-family: 'Delius Swash Caps', cursive;
@@ -148,39 +162,69 @@ header {
   
 .ct_principal {
 	background-color: #4e4e4e;
-	height: 517px;
+	height: 823px;
 	padding: 75px 25px;
 }
-
+  .ct_principal img {
+  height: auto;
+  width: 100%;
+  box-sizing: content-box;
+  position: static;
+}
 .ct_principal_textos {
   
   width: 100%;
   height: auto;
   float: right;
   display: flex;
-  }  
+  flex-wrap: wrap;
+  } 
+  .ct_principal_texto1 {
+    font-size: 7vw;
+  }
+    .ct_principal_texto2 {
+    font-size: 9vw;
+  }
+  .ct_principal_texto3 {
+    font-size: 4vw;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 691px){
   .ct_principal {
     display: grid;
     float: none;
+    height: auto;
   }
   
   .ct_principal picture {
     order: 2;
+    display: none;
   }
   
   .ct_principal_textos {
     order: 1;
     width: 100%;
-    height: 28vw;
+    height: max-content;
     float: left;
     flex-wrap: wrap;
     justify-content: center;
   }
   .ct_principal_textos h3 {
-    margin: auto;
+  margin: auto;
   }  
   .ct_principal_texto1 {
   font-size: 7.5vw;
@@ -212,6 +256,19 @@ header {
   text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.13);
   width: 89vw;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 }
+
+
+
+
+
+
+
+
+
+
+
