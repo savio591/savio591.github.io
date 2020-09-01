@@ -52,8 +52,9 @@ header {
 
 .ct_vestidos {
   background-color: #ff0066;
-	width: 100%;
 	height: 650px;
+  margin: -75px auto;
+  padding: 16px 5vw;
 }
 
 .ct_principal img {
@@ -125,6 +126,34 @@ header {
   width: 242px;
 }
 
+.looks_grid {
+  padding: 50px;
+}
+
+#looks_grid {
+  /* Prevent vertical gaps */
+  line-height: 0;
+   
+  -webkit-column-count: 5;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    5;
+  -moz-column-gap:      0px;
+  column-count:         2;
+}
+
+#looks_grid img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -160,8 +189,8 @@ header {
   
 .ct_principal {
 	background-color: #4e4e4e;
-	height: 823px;
-	padding: 75px 25px;
+	height: auto;
+	padding: 85px 25px;
 }
   .ct_principal img {
   height: auto;
@@ -173,7 +202,7 @@ header {
   
   width: 100%;
   height: auto;
-  float: right;
+  float: none;
   display: flex;
   flex-wrap: wrap;
   } 
@@ -186,6 +215,10 @@ header {
   .ct_principal_texto3 {
     font-size: 4vw;
   }
+  .ct_vestidos {
+    margin: -72px auto;
+  }
+  
 }
 
 
@@ -218,9 +251,11 @@ header {
     float: left;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 41px 0px;
   }
   .ct_principal_textos h3 {
   margin: auto;
+  float: left;
   }  
   .ct_principal_texto1 {
   font-size: 7.5vw;
