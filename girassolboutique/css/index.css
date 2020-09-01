@@ -1,7 +1,9 @@
 @charset "utf-8";
+@import url("chrome://browser/skin/compacttheme.css");
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@600;700&display=swap');
+
 /* Cabeçalho css */
 
 header {
@@ -49,7 +51,7 @@ header {
 }
 
 .ct_vestidos {
-	background-color: #ff0066;
+  background-color: #ff0066;
 	width: 100%;
 	height: 650px;
 }
@@ -107,10 +109,8 @@ header {
 }
 
 .ct_vestidos_bl_texto {
-  width: 292px;
-  height: 81px;
-  margin: auto;
-  padding: 15px
+  padding: 15px;
+  width: 100%;
 }
 
 .ct_vestidos_texto {
@@ -123,9 +123,8 @@ header {
   text-align: center;
   padding: 0px 20px;
   margin: auto;
-  height: auto;
+  width: 242px;
 }
-
 
 
 
