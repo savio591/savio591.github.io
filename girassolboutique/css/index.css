@@ -15,6 +15,7 @@ header {
 	margin: 0 auto;
 	padding: 12.3px;
 	cursor: pointer;
+  z-index: 10;
 }
 
 .bl_nav {
@@ -43,7 +44,7 @@ header {
 
 .ct_principal {
 	background-color: #4e4e4e;
-	height: 635px;
+	height: 517px;
 	padding: 75px;
 }
 
@@ -55,7 +56,7 @@ header {
 
 .ct_principal img {
   height: auto;
-  max-width: 755px;
+  width: auto;
 }
 
 .ct_principal_textos {
@@ -91,7 +92,6 @@ header {
   text-align: center;
   text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.13);
   width: auto;
-  height: 166.352px;
 }
 
 .ct_principal_texto3 {
@@ -105,7 +105,23 @@ header {
   -moz-transform: scale(0.94, 1.03);
   -webkit-transform: scale(0.94, 1.03);
 }
-@media (max-width: 828px){
+
+@media (max-width: 691px){
+  .ct_principal_textos h3 {
+    font-size: 6vw;
+    line-height: 1.5;
+  }  
+}
+@media (max-width: 1344px){
+  .ct_principal img {
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+}
+  
+@media (max-width: 1040px){
   .bl_nav li {
 	padding: 14px 0px;
 	font-family: 'Delius Swash Caps', cursive;
@@ -122,7 +138,7 @@ header {
     
   height: inherit;
   display: flex;
-  width: 46%;
+  width: 328px;
   margin: auto;
   flex-direction: row-reverse;
 }
@@ -132,5 +148,24 @@ header {
 	box-sizing: border-box;
 	height: 53px;
 	background-color: #555;
+}
+  
+.ct_principal {
+	background-color: #4e4e4e;
+	height: 517px;
+	padding: 75px 25px;
+}
+
+.ct_principal_textos {
+  
+  width: 100%;
+  height: auto;
+  float: right;
+  display: grid;
+}
+
+  
+  
+  
 }
 }
