@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Alfa+Slab+One&display=swap');
+
 
 /* Cabeçalho css */
 
@@ -55,7 +57,7 @@ header {
 }
 .ct_vestidos {
   background-color: #ff0066;
-	height: 650px;
+	height: auto;
   margin: -75px auto;
   padding: 16px 5vw;
 }
@@ -130,7 +132,7 @@ header {
 }
 
 .looks_grid {
-  padding: 50px;
+  padding: 3vw;
 }
 
 #looks_grid {
@@ -151,8 +153,31 @@ header {
   cursor: pointer;
 }
 
+.looks_grid div h4 {
+  font-size: 22px;
+  font-family: "Aleo";
+  font-weight: 300;
+  color: rgb(255, 249, 95);
+  font-style: italic;
+  text-align: center;
+  -moz-transform: scale(0.94, 1.03);
+  -webkit-transform: scale(0.94, 1.03);
+  -ms-transform: scale(0.94, 1.03);
+  margin: -31px 1px;
+  background-color: grey;
+}
 
-
+.looks_grid h5 {
+  font-size: 22px;
+  font-family: "Alfa Slab One";
+  color: rgb(255, 249, 95);
+  text-align: center;
+  -moz-transform: scale(0.94, 1.03);
+  -webkit-transform: scale(0.94, 1.03);
+  -ms-transform: scale(0.94, 1.03);
+  margin: 16px 111px;
+  background-color: black;
+}
 
 
 
