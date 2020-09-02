@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import url("chrome://browser/skin/compacttheme.css");
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@600;700&display=swap');
@@ -81,7 +80,7 @@ header {
 
 .ct_principal_texto1 {
   font-size: 57px;
-  font-family: "Cabin Condensed";
+  font-family: "Cabin Condensed", Roboto;
   color: rgb(222, 222, 222);
   font-weight: bold;
   line-height: 1.284;
@@ -93,7 +92,7 @@ header {
 
 .ct_principal_texto2 {
   font-size: 90px;
-  font-family: "Cabin Condensed";
+  font-family: "Cabin Condensed", Roboto;
   color: rgb(222, 222, 222);
   font-weight: bold;
   line-height: 0.86;
@@ -248,6 +247,15 @@ header {
     margin: -72px auto;
   }
   
+  .looks_grid div h4 {
+  font-size: 20px;
+  margin: -33px auto;
+  }
+
+.looks_grid h5 {
+  font-size: 16px;
+  margin: 18px 60px;
+}
 }
 
 
@@ -319,7 +327,22 @@ header {
   margin: 0;
   padding: 0;
 }
+.looks_grid div h4 {
+  font-size: 4vw;
+  margin: -33px 0px;
+  }
 
+.looks_grid h5 {
+  font-size: 3vw;
+  margin: 28px 28px;
+}
+
+  
+  
+  
+  
+  
+  
 }
 
 
