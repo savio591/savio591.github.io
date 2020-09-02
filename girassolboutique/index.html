@@ -35,37 +35,8 @@
 <meta name="twitter:image" content="https://savio591.github.io/girassolboutique/logo_seo.jpg" />
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
 	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<link rel="stylesheet" type="text/css" href="./css/looks_grid.css">
 </head>
-<style>
-	@media (max-width: 1200px) {
-  #looks_grid {
-  -moz-column-count:    4;
-  -webkit-column-count: 4;
-  column-count:         4;
-  }
-}
-@media (max-width: 1000px) {
-  #looks_grid {
-  -moz-column-count:    3;
-  -webkit-column-count: 3;
-  column-count:         3;
-  }
-}
-@media (max-width: 800px) {
-  #looks_grid {
-  -moz-column-count:    2;
-  -webkit-column-count: 2;
-  column-count:         2;
-  }
-}
-@media (max-width: 400px) {
-  #looks_grid {
-  -moz-column-count:    1;
-  -webkit-column-count: 1;
-  column-count:         1;
-  }
-}
-</style>
 <body>
 <header>
 	<img onclick="location='https://savio591.github.io/girassolboutique'" class="logo" src="img/logo.svg" type="image/svg+xml" alt="Girassol Boutique"/>
@@ -81,9 +52,9 @@
 	<picture>
 	 <source media="(min-width:650px)" srcset="./img/ct_principal_grid.png">
 		<source media="(max-width:649px)" srcset="./img/ct_principal_grid_mobile.png">
-	 <img src="./img/ct_principal_grid.png" alt="fotos de vestidos">
+	 <img src="./img/ct_principal_grid.png" onclick="alert('Ops :( A loja online estará disponível em breve!')" alt="fotos de vestidos">
 	</picture>
-	<div class="ct_principal_textos">
+	<div class="ct_principal_textos" >
 		<h3 class="ct_principal_texto1">Looks e roupas<br>femininas</h3>
 		<h3 class="ct_principal_texto2">a Partir de<br>R$ 14,99</h3>
 		<h3 class="ct_principal_texto3">seja à vista, boleto e cartão de crédito!</h3>
@@ -93,10 +64,16 @@
 	<div class="ct_vestidos_bl_texto">
 		<h3 class="ct_vestidos_texto">Os Melhores Looks</h3>
 	</div>
-	<section class="looks_grid" id="looks_grid">
-	  <img src="./img/1.jpg" alt="Oi">
-	  <img src="./img/2.jpg" alt="kkkk">
+	<section class="looks_grid" id="looks_grid" onclick="alert('Um novo e-Commerce está em construção! A loja estará disponível em breve!')">
+		<img src="./img/melhores_looks/1.png" alt="Oi">
+		<img src="./img/melhores_looks/2.jpg" alt="kkkk">
+		<img src="./img/melhores_looks/3.jpg" alt="Oi">
+		<img src="./img/melhores_looks/4.jpg" alt="Oi">
+		<img src="./img/melhores_looks/5.jpg" alt="Oi">
+		<img src="./img/melhores_looks/6.jpg" alt="Oi">
+		<img src="./img/melhores_looks/7.jpg" alt="Oi">
 </section>
 </main>
 </body>
 </html>
+
