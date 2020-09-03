@@ -425,7 +425,7 @@ footer h5 {
   
   footer h5 {
   
-  margin: auto auto -5vw auto;
+  margin: auto auto -4vw auto;
   color: #ccc;
   font-size: 5vw;
   font-family: "Cabin Condensed";
@@ -434,6 +434,20 @@ footer h5 {
   text-align: center;
 }
   
+  .icons i {
+  width: 7vw;
+  height: 7vw;
+  display: block;
+  background-repeat: round;
+  cursor: pointer;
+  margin: -10vw 5px;
+}
+  
+  .icons i:hover {
+      cursor: pointer;
+    background-color: white;
+    padding: 2px;
+  }
   .footer_2 {
     display: grid;
     margin: auto;
@@ -451,19 +465,11 @@ footer h5 {
     text-align: left;
     min-width: max-content;
     padding: 0vw 3vw;
-    cursor: pointer;
-       
   }
   
+  .footer_2 li:hover {
+    	text-decoration: underline;
+      cursor: pointer;
+
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
