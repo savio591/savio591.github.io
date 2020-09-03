@@ -241,7 +241,11 @@ footer h5 {
   filter: invert(0.8);
 }
 
-
+  .icons i:hover {
+      cursor: pointer;
+    background-color: white;
+    padding: 2px;
+  }
 
 
 
@@ -442,12 +446,7 @@ footer h5 {
   cursor: pointer;
   margin: -10vw 5px;
 }
-  
-  .icons i:hover {
-      cursor: pointer;
-    background-color: white;
-    padding: 2px;
-  }
+ 
   .footer_2 {
     display: grid;
     margin: auto;
