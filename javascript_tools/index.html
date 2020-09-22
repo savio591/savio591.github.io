@@ -26,10 +26,11 @@
   <!-- Start of site -->
   <nav class="navbar">
     <ul>
-      <li class="button-input_to_length" onclick="disabler()">Input to Length</li>
+      <li id="itl" class="button-input_to_length" onclick="disabler()">Input to Length</li>
+      <li id="js" class="button-json_strings" onclick="disablerJSON()">JSON</li>
     </ul>
   </nav>
-  <div class="input_to_length">
+  <div class="input_to_length disabler">
     <h1 class="titulo">Input chars to number chars</h1>
     <h3 class="text">Insert string in the input.</h3>
     <form name="formulario">
@@ -39,13 +40,85 @@
       </label>
     </form>
   </div>
+  <div class="json_strings disabler">
+    <header>
 
+    </header>
+
+    <section>
+
+    </section>
+
+  </div>
   <!-- End of site -->
 
 <!-- Div Disabler -->
   <script>
     let divElement = document.querySelector(".input_to_length");
     function disabler() {divElement.classList.toggle("disabler");}
+
+    let divJson = document.querySelector(".json_strings");
+    function disablerJSON() {divJson.classList.toggle("disabler")}
+  </script>
+
+  <!-- Json Javascript use -->
+  <script>
+    const header = document.querySelector('header');
+    const section = document.querySelector('section');
+
+    let requestURL = './js/superheroes.json';
+    let request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+    request.onload = function() {
+    const superHeroes = request.response;
+    populateHeader(superHeroes);
+    showHeroes(superHeroes);
+    };
+
+      function populateHeader(jsonObj) {
+        const myH1 = document.createElement('h1');
+        myH1.textContent = jsonObj['squadName'];
+        header.appendChild(myH1);
+
+        const myPara = document.createElement('p');
+        myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
+        header.appendChild(myPara);
+      }
+
+      function showHeroes(jsonObj) {
+  const heroes = jsonObj['members'];
+
+  for (let i = 0; i < heroes.length; i++) {
+    const myArticle = document.createElement('article');
+    const myH2 = document.createElement('h2');
+    const myPara1 = document.createElement('p');
+    const myPara2 = document.createElement('p');
+    const myPara3 = document.createElement('p');
+    const myList = document.createElement('ul');
+
+    myH2.textContent = heroes[i].name;
+    myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
+    myPara2.textContent = 'Age: ' + heroes[i].age;
+    myPara3.textContent = 'Superpowers:';
+
+    const superPowers = heroes[i].powers;
+    for (let j = 0; j < superPowers.length; j++) {
+      const listItem = document.createElement('li');
+      listItem.textContent = superPowers[j];
+      myList.appendChild(listItem);
+    }
+
+    myArticle.appendChild(myH2);
+    myArticle.appendChild(myPara1);
+    myArticle.appendChild(myPara2);
+    myArticle.appendChild(myPara3);
+    myArticle.appendChild(myList);
+
+    section.appendChild(myArticle);
+  }
+}
   </script>
 
   <!-- Input to length script -->

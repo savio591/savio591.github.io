@@ -269,7 +269,7 @@ textarea {
 }
 
 .navbar ul {
-  width: 100%;
+  display: flex;
 }
 .navbar li {
   margin: auto;
@@ -283,5 +283,9 @@ textarea {
 
 .input_to_length {
   margin: 35px;
-  animation: linear fader 1s;
+}
+
+.json_strings {
+    padding: 0 5vw;
+
 }
