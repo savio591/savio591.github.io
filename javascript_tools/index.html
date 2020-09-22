@@ -12,7 +12,6 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
@@ -24,13 +23,30 @@
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <!-- Start of site -->
+  <div class="bloco">
+    <h1 class="titulo">Input chars to number chars</h1>
+    <h3 class="text">Insert string in the input.</h3>
+    <form name="formulario">
+      <label>
+        <input id="entrada" name="inpote" value="aapo" oninput="testee()">
+        <output id="output">0</output>
+      </label>
+    </form>
+  </div>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!-- End of site -->
+
+  <!-- Javascript Starting -->
+  <script>
+    function testee() {document.getElementById("output").innerHTML = document.getElementById("entrada").value.length}
+  </script>
+
+  <script src="./js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="./js/plugins.js"></script>
+  <script src="./js/main.js"></script>
+
+  <!-- Google Analytics. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-178648164-1', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
