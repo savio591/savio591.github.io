@@ -260,6 +260,28 @@ textarea {
   }
 }
 
-.bloco {
+.disabler {
+  display:none;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar ul {
+  width: 100%;
+}
+.navbar li {
+  margin: auto;
+  width: 64px;
+  border-style: dashed;
+  text-align: center;
+  font-style: italic;
+  display: block;
+  cursor: pointer;
+}
+
+.input_to_length {
   margin: 35px;
+  animation: linear fader 1s;
 }
