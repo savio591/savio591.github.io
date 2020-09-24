@@ -31,6 +31,7 @@ body {
 		a {
 		color: #e8e6e3;
 		font-size: 48px;
+		padding: 32px;
 		}
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -85,8 +86,9 @@ and (max-width : 320px) {
     font-size: 18px;
     float: none;
 }
-.links {
-    padding: 0px;
+.links a {
+    padding: 0 32px;
+    font-size: 18px;
 }
 
 
