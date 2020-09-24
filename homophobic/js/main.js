@@ -26,7 +26,7 @@ function verificador() {
   }
   else {
     console.log(nomeReal + " " + "não é gay.")
-    document.querySelector(".saida").innerHTML = nomeReal+" "+"não é gay"
+    document.querySelector(".saida").innerHTML = nomeReal+" "+"não é gay, agradeça!"
     document.querySelector(".saida").style.color = "blue"
 
   }
