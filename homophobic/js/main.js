@@ -10,9 +10,9 @@ function texto() {
   nome = document.getElementById("entrada").value;
   nomeReal = nome
   retorno = nome.search(nomesDeGay);
+  nome = nome.toLowerCase()
   nome = nome.replace("luan", "pedro");
   nome = nome.replace("iago", "pedro");
-  nome = nome.toLowerCase()
   retorno = nome.search(nomesDeGay);
 }
 
