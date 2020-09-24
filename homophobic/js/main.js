@@ -21,10 +21,13 @@ function verificador() {
   if ( i <= retorno) {
     console.log( nomeReal+" "+"É GAY");
     document.querySelector(".saida").innerHTML = nomeReal+" "+"É GAY!"
+    document.querySelector(".saida").style.color = "red"
+
   }
   else {
     console.log(nomeReal + " " + "não é gay.")
     document.querySelector(".saida").innerHTML = nomeReal+" "+"não é gay"
+    document.querySelector(".saida").style.color = "blue"
 
   }
 }
