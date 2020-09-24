@@ -12,6 +12,7 @@ function texto() {
   retorno = nome.search(nomesDeGay);
   nome = nome.replace("luan", "pedro");
   nome = nome.replace("iago", "pedro");
+  nome = nome.toLowerCase()
   retorno = nome.search(nomesDeGay);
 }
 
