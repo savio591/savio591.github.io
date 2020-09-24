@@ -20,7 +20,7 @@ function verificador() {
   console.log("verificando...")
   if ( i <= retorno) {
     console.log( nomeReal+" "+"É GAY");
-    document.querySelector(".saida").innerHTML = nomeReal+" "+"É GAY!"
+    document.querySelector(".saida").innerHTML = nomeReal+" "+"É GAY! Mate-o!"
     document.querySelector(".saida").style.color = "red"
 
   }
