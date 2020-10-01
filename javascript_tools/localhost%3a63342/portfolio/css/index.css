@@ -1,0 +1,119 @@
+body {
+  background-color: #333;
+  color: #ccc;
+  margin: auto;
+}
+
+header {
+  
+  display: grid;
+  box-sizing: border-box;
+  width: 100%;
+  height: 92px;
+  align-content: center;
+}
+
+.hd-navbar {
+  
+  padding: 32px 139px;
+  position: absolute;
+  margin: auto;
+}
+.titulo-logo {
+  
+  width: 100%;
+  height: inherit;
+}
+
+
+.hd-navbar a {
+  
+  padding: 0px 8px;
+  color: #ccc;
+  font-family: Buenard;
+}
+.titulo {
+  font-size: 2em;
+  color: #c6c6c6;
+  font-family: Buenard;
+  text-align: center;
+}
+
+.ct-galeria {
+  margin: auto;
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: auto auto auto;
+  width: 90%;
+}
+
+.ct-galeria img {
+  width: 356px;
+  height: auto;
+  padding: 68px 0px;
+}
+.ct-galeria div {
+  
+  width: auto;
+  height: auto;
+  float: left;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: a;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1176px) {
+.hd-navbar {
+  padding: 0px 0px;
+  position: relative;
+  margin: auto;
+  }
+  .titulo {
+    font-size: 1.8em;
+    padding: 10px 0px;   
+}
+  .ct-galeria {
+  margin: auto;
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: auto auto;
+  width: 90%;
+  }
+  .ct-galeria img {
+  width: 429px;
+  height: auto;
+  padding: 68px 0px;
+}
+}
+
+@media only screen and (max-width: 860px) {
+  .ct-galeria {
+    margin: auto;
+    display: grid;
+    grid-column-gap: 0px;
+    grid-template-columns: auto;
+  }
+  
+  .ct-galeria img {
+  width: 335px;
+  height: auto;
+}
+.ct-galeria div {
+  
+  width: auto;
+  height: auto;
+  float: left;
+  margin: auto;
+  padding: 0px 0px;
+}
+}

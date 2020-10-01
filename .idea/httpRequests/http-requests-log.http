@@ -3,3 +3,25 @@ Accept: */*
 Cache-Control: no-cache
 
 ###
+
+GET https://graph.facebook.com/17841405822304914/media
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-09-24T094934.400.json
+
+###
+
+GET https://graph.facebook.com/17841405822304914/media
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-09-24T094241.400.json
+
+###
+
+GET http://localhost:8080/resources
+Accept: */*
+Cache-Control: no-cache
+
+###
