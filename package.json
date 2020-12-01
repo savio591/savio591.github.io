@@ -5,6 +5,9 @@
   "repository": "https://github.com/savio591/savio591.github.io",
   "author": "<savio591@hotmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "webpack serve --mode development"
+  },
   "dependencies": {
     "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
