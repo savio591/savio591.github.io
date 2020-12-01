@@ -11,3 +11,6 @@
 => Feito com html e css
 
 => Tudo manual
+
+## Segunda Versão(27/11/2020)
+=> Escrito com Javascript, TypeScript e ReactJS e compilado com Babel e Webpack
