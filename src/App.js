@@ -1,24 +1,17 @@
-import React, { useState, useEffect } from "react";
-import projectsGet from './services/projectsApi'
+import React from "react";
+import ProjectsList from './components/projectsList'
 // Text Fonts: Alfa Slab e Buenard
 
 function App() {
+  return(
+  <>
+  <header>
+    <h1>Savil Experiments</h1>
+  </header>
 
-  const [projects, setProjects] = useState([])
-  
-    useEffect(() => {
-      projectsGet.get('').then(response => {
-        setProjects(response.data);
-      })
-    }, [])
-  //const projects = [{ "test": "apo" }, { "test": "apods" }, { "test": "apodssa" }]
-
-  return (<><ul>
-    {projects.map((project) => (<li>{project.title}</li>))
-    }
-  </ul>
-  </>)
-
+  <ProjectsList />
+  </>
+  )
 }
 
 export default App
