@@ -1,8 +1,7 @@
 import React from 'react'
 import '../styles/header.css';
 
-function Header() {
-    const name = "SAVIL EXPERIMENTS"
+function Header(name) {
     return (
         <header>
             <h1 className="header_logo">{name}</h1>

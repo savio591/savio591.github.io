@@ -7,7 +7,7 @@ import ProjectsList from './components/projectsList'
 function App() {
   return(
   <>
-  <Header />
+  <Header name="SAVIR" />
   <ProjectsList />
   </>
   )
