@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 
 import projectsFetch from '../services/projectsApi';
 
+import '../styles/projects.css'
+
 function ProjectsList() {
 
     const [projects, setProjects] = useState([])
@@ -12,10 +14,14 @@ function ProjectsList() {
         })
     }, [])
 
-    return (<><ul>
+    return (<><ul className="projectList">
         {projects.map((project) => (
-            <a key={project.title} href={project.url}><li key={project.title}>{project.title}</li></a>
-        )
+            <div className="projectCard">
+                <a key={project.title} href={project.url}>
+                    <li className="projectTitle" key={project.title}>
+                        {project.title}</li>
+                </a>
+            </div>)
         )
         }
     </ul>

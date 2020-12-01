@@ -16,7 +16,9 @@ header {
     font-size: 25px;
     line-height: 100%;
     letter-spacing: -0.03em;
+    text-transform: uppercase;
     color: #CCCCCC;
     /* Savil Shadows */
     text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.25);
 }
+

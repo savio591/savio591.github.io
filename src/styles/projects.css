@@ -1,0 +1,33 @@
+.project {
+    width: 351px;
+    height: 183px;
+}
+
+.projectList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projectCard {
+    background: #4B4B4B;
+    width: 351px;
+    height: 183px;
+    border: 1px solid #7E7E7E;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 12px;
+}
+
+.projectTitle {
+    font-family: Buenard;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+    color: #E8E6E3;
+}

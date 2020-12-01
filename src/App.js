@@ -9,7 +9,7 @@ import './styles/main.css'
 function App() {
   return(
   <>
-  <Header name="SAVIR" />
+  <Header name="Savil Experiments" />
   <ProjectsList />
   </>
   )
