@@ -1,3 +1,28 @@
+.containerProjects {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.projectsTitle {
+    width: 128px;
+    height: 31px;
+
+    font-family: Buenard;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #E5E5E5;
+    padding: 24px;
+    animation-name: appear;
+    animation-duration: 300ms;
+    animation-duration: .1s;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+}
+
 .project {
     width: 351px;
     height: 183px;
@@ -13,11 +38,32 @@
 .projectCard {
     background: #4B4B4B;
     width: 351px;
-    height: 183px;
+    height: 64px;
     border: 1px solid #7E7E7E;
     box-sizing: border-box;
     border-radius: 20px;
     margin: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.75));
+    transition: all .2s;
+    animation-name: appear;
+    animation-duration: 300ms;
+    animation-duration: .5s;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+}
+
+.projectCard:hover {
+    background: #333333;
+    text-decoration-line: underline;
+}
+
+.projectCard:active {
+    background: #333333;
+    box-shadow: inset 0px 6px 0px rgba(39, 39, 39, 0.64);
 }
 
 .projectTitle {
@@ -27,7 +73,21 @@
     font-size: 16px;
     line-height: 21px;
     text-align: center;
-    text-decoration-line: underline;
-    text-transform: capitalize;
     color: #E8E6E3;
+    text-decoration-color: black;
 }
+
+.projectList a:link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+@keyframes appear {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }

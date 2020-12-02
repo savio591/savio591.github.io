@@ -10,7 +10,7 @@ function App() {
   return(
   <>
   <Header name="Savil Experiments" />
-  <ProjectsList />
+  <ProjectsList name="=Front-End=" />
   </>
   )
 }

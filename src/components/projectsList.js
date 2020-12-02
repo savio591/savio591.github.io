@@ -4,7 +4,7 @@ import projectsFetch from '../services/projectsApi';
 
 import '../styles/projects.css'
 
-function ProjectsList() {
+function ProjectsList(props) {
 
     const [projects, setProjects] = useState([])
 
@@ -14,18 +14,20 @@ function ProjectsList() {
         })
     }, [])
 
-    return (<><ul className="projectList">
-        {projects.map((project) => (
-            <div className="projectCard">
-                <a key={project.title} href={project.url}>
-                    <li className="projectTitle" key={project.title}>
-                        {project.title}</li>
-                </a>
-            </div>)
-        )
-        }
-    </ul>
-    </>)
+    const name = props.name;
+    return (
+        <section className="containerProjects">
+            <h1 className="projectsTitle">{name}</h1>
+            <ul className="projectList">
+                {projects.map((project) => (
+                    <a className="projectCard" key={project.title} href={project.url}>
+                        <li className="projectTitle" key={project.title}>
+                            {project.title}
+                        </li>
+                    </a>
+                ))}
+            </ul>
+        </section>)
 }
 
 export default ProjectsList
