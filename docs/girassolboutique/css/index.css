@@ -183,6 +183,7 @@ header {
 
 .looks_grid div {
     margin: 7px;
+    display: inline-block;
 }
 
 footer {
