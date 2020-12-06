@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import projectsFetch from '../services/projectsApi';
+import savilFetch from '../services/savilApi';
 
 import '../styles/projects.css'
 
@@ -9,7 +9,7 @@ function ProjectsList(props) {
     const [projects, setProjects] = useState([])
 
     useEffect(() => {
-        projectsFetch.get('').then(response => {
+        savilFetch.get('projects').then(response => {
             setProjects(response.data);
         })
     }, [])

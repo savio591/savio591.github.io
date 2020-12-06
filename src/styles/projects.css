@@ -1,6 +1,7 @@
 .containerProjects {
     display: flex;
     flex-direction: column;
+    flex: 1 0 auto;
 }
 
 
@@ -26,6 +27,7 @@
 .project {
     width: 351px;
     height: 183px;
+    
 }
 
 .projectList {
@@ -81,6 +83,7 @@
     color: #FFFFFF;
     text-decoration: none;
 }
+
 
 @keyframes appear {
     from {
