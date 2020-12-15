@@ -23,3 +23,11 @@ footer h1 { /* Copyright Text */
 .socialIcons {
     height: 32px;
 }
+
+.socialIcons ul {
+    display: flex;
+}
+
+.socialIcons li:hover {
+    zoom: 106%;
+}
