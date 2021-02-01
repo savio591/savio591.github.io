@@ -1,0 +1,43 @@
+#EXTM3U
+
+#EXTINF:-1 tvg-id=" " tvg-name=" " tvg-logo="ICONE-LS" group-title="Canais: BBB", Sala de Estar
+http://dnsx.co:80/live/amanda.iptv/a1aw5s/93521.ts
+
+#EXTINF:-1 tvg-id=" " tvg-name=" " tvg-logo="ICONE-LS" group-title="Canais: BBB",[COLOR white][B]LS -> [/B][/COLOR][COLOR lime][B]BBB Sala da Casa Extra SD[/B][/COLOR] 
+http://dnsx.co:80/live/amanda.iptv/a1aw5s/93518.ts
+
+#EXTINF:-1 tvg-id=" " tvg-name=" " tvg-logo="ICONE-LS" group-title="Canais: BBB",[COLOR white][B]LS -> [/B][/COLOR][COLOR lime][B]BBB Quarto Cordel SD[/B][/COLOR] 
+http://dnsx.co:80/live/amanda.iptv/a1aw5s/93515.ts
+
+#EXTINF:-1 tvg-id=" " tvg-name=" " tvg-logo="ICONE-LS" group-title="Canais: BBB",[COLOR white][B]LS -> [/B][/COLOR][COLOR lime][B]BBB Quarto Colorido SD[/B][/COLOR] 
+http://dnsx.co:80/live/amanda.iptv/a1aw5s/93512.ts
+
+#EXTINF:-1 tvg-id=" " tvg-name=" " tvg-logo="ICONE-LS" group-title="Canais: BBB",[COLOR white][B]LS -> [/B][/COLOR][COLOR lime][B]BBB Piscina SD [/B][/COLOR] 
+http://dnsx.co:80/live/amanda.iptv/a1aw5s/93509.ts
+
+#EXTINF:-1 tvg-id=" " tvg-name=" " tvg-logo="ICONE-LS" group-title="Canais: BBB",[COLOR white][B]LS -> [/B][/COLOR][COLOR lime][B]BBB Mosaico SD [/B][/COLOR] 
+http://dnsx.co:80/live/amanda.iptv/a1aw5s/89715.ts
+
+#EXTINF:-1 tvg-id=" " tvg-name=" " tvg-logo="ICONE-LS" group-title="Canais: BBB",[COLOR white][B]LS -> [/B][/COLOR][COLOR lime][B]BBB Jardim SD[/B][/COLOR] 
+http://dnsx.co:80/live/amanda.iptv/a1aw5s/93506.ts
+
+#EXTINF:-1 tvg-id=" " tvg-name=" " tvg-logo="ICONE-LS" group-title="Canais: BBB",[COLOR white][B]LS -> [/B][/COLOR][COLOR lime][B]BBB Cozinha Vip Xepa SD[/B][/COLOR] 
+http://dnsx.co:80/live/amanda.iptv/a1aw5s/93503.ts
+
+#EXTINF:-1 tvg-id=" " tvg-name=" " tvg-logo="ICONE-LS" group-title="Canais: BBB",[COLOR white][B]LS -> [/B][/COLOR][COLOR lime][B]BBB Confessionario HD[/B][/COLOR] 
+http://dnsx.co:80/live/amanda.iptv/a1aw5s/93500.ts
+
+#EXTINF:-1 tvg-id=" " tvg-name=" " tvg-logo="ICONE-LS" group-title="Canais: BBB",[COLOR white][B]LS -> [/B][/COLOR][COLOR lime][B]BBB Acompanhe a Casa SD[/B][/COLOR] 
+http://dnsx.co:80/live/amanda.iptv/a1aw5s/93497.ts
+
+#EXTINF:-1 tvg-id=" " tvg-name=" " tvg-logo="ICONE-LS" group-title="Canais: BBB",[COLOR white][B]LS -> [/B][/COLOR][COLOR lime][B]BBB Acompanhe a Casa Extra SD[/B][/COLOR] 
+http://dnsx.co:80/live/amanda.iptv/a1aw5s/93494.ts
+
+#EXTINF:-1 tvg-id=" " tvg-name=" " tvg-logo="ICONE-LS" group-title="Canais: BBB",[COLOR white][B]LS -> [/B][/COLOR][COLOR lime][B]BBB Acompanhe a Casa 2 SD [/B][/COLOR] 
+http://dnsx.co:80/live/amanda.iptv/a1aw5s/93491.ts
+
+#EXTINF:-1 tvg-id=" " tvg-name=" " tvg-logo="ICONE-LS" group-title="Canais: BBB",[COLOR white][B]LS -> [/B][/COLOR][COLOR lime][B]BBB 2 SD[/B][/COLOR] 
+http://dnsx.co:80/live/amanda.iptv/a1aw5s/89711.ts
+
+#EXTINF:-1 tvg-id=" " tvg-name=" " tvg-logo="ICONE-LS" group-title="Canais: BBB",[COLOR white][B]LS -> [/B][/COLOR][COLOR lime][B]BBB 1 SD[/B][/COLOR] 
+http://dnsx.co:80/live/amanda.iptv/a1aw5s/89719.ts
