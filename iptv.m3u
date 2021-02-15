@@ -203,6 +203,8 @@ http://dnsx.co:80/live/0915597625/fireurl.co/72159.m3u8
 http://dnsx.co:80/live/0915597625/fireurl.co/72160.m3u8
 #EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="Like SD" tvg-logo="https://i.imgur.com/sQETY6Z.jpeg" group-title="Canais | Variedades",Like SD
 http://dnsx.co:80/live/0915597625/fireurl.co/72161.m3u8
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="Loading FHD" tvg-logo="https://loading.com.br/wp-content/uploads/2020/11/Logotipo-Loading.svg" group-title="Canais | Variedades",Loading FHD
+https://centurylink.br.cdn.booyah.live/hls/1000026/34850987.m3u8
 #EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="Mais na Tela FHD" tvg-logo="http://a5.vc/e5K" group-title="Canais | Variedades",Mais na Tela FHD
 http://dnsx.co:80/live/0915597625/fireurl.co/72162.m3u8
 #EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="Mais na Tela FHD [H265]" tvg-logo="http://a5.vc/e5K" group-title="Canais | Variedades",Mais na Tela FHD [H265]
