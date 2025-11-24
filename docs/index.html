@@ -1,32 +1,556 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<title>Savio Castelo</title>		
-		<link rel="stylesheet" type="text/css" href="style.css" />
-		<meta http-equiv="refresh" content="1; URL='https://test-purr-22244265.figma.site'"/>
-	
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F607FWS7Z5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-		
+      gtag('config', 'G-F607FWS7Z5');
+    </script>
 
-		
-		<!--[if IE]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		
-	</head>
-	<body>
-		<!-- <div class="wrapper">
-			<img class="logo" src="images/tile-wide.png" alt="LG" title="LG"/>
-			<div class="hr"></div>
-			<h1>Desculpe, estamos passando por uma manutenção.</h1>
-			<p>É rapidinho, estamos rodando alguns procedimentos de segurança para que seus dados não se percam.</p>
-						
-						
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>thesvio | Creative Director & Motion Designer - Savio Castelo</title>
+    <meta name="description" content="Portfólio de Savio Castelo (thesvio). Creative Director, Motion Designer e Estrategista de Marketing especializado em identidades visuais de impacto, animação 3D e narrativas imersivas. Baseado no Brasil.">
+    <meta name="keywords" content="Savio Castelo, thesvio, Creative Director, Motion Design, Design Gráfico, 3D, Blender, After Effects, Marketing, Identidade Visual, Macapá, Brasil">
+    <meta name="author" content="Savio Castelo">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#050505">
 
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://saviocastelo.com.br/">
+    <meta property="og:title" content="thesvio | Creative Director & Motion Designer">
+    <meta property="og:description" content="Portfólio de Savio Castelo. Transformando marcas com Design de Impacto, Motion Graphics e Estratégia.">
+    <meta property="og:image" content="https://saviocastelo.com.br/assets/og-image.jpg"> 
 
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://saviocastelo.com.br/">
+    <meta property="twitter:title" content="thesvio | Creative Director & Motion Designer">
+    <meta property="twitter:description" content="Portfólio de Savio Castelo. Transformando marcas com Design de Impacto, Motion Graphics e Estratégia.">
+    <meta property="twitter:image" content="https://saviocastelo.com.br/assets/og-image.jpg">
 
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Savio Castelo",
+      "alternateName": "thesvio",
+      "url": "https://saviocastelo.com.br",
+      "jobTitle": "Creative Director & Motion Designer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance / Independent"
+      },
+      "sameAs": [
+        "https://instagram.com/thesvio",
+        "https://linkedin.com/in/savio591"
+      ],
+      "description": "Creative Director e Motion Designer especializado em identidades visuais, 3D e estratégia de marketing."
+    }
+    </script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
-		</div> -->
-	</body>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        'void': '#050505',
+                        'charcoal': '#121212',
+                        'off-white': '#e5e5e5',
+                        'silver': '#C0C0C0',
+                    },
+                    animation: {
+                        'spin-slow': 'spin 12s linear infinite',
+                        'marquee': 'marquee 35s linear infinite',
+                    },
+                    keyframes: {
+                        marquee: {
+                            '0%': { transform: 'translateX(0%)' },
+                            '100%': { transform: 'translateX(-100%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #050505;
+            color: #e5e5e5;
+            cursor: none;
+            overflow-x: hidden;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #050505; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+
+        /* Custom Cursor */
+        .cursor-dot {
+            width: 8px; height: 8px; background-color: white;
+            position: fixed; pointer-events: none; z-index: 9999; border-radius: 50%;
+            transform: translate(-50%, -50%); mix-blend-mode: difference;
+        }
+        .cursor-outline {
+            width: 40px; height: 40px; border: 1px solid rgba(255, 255, 255, 0.5);
+            position: fixed; pointer-events: none; z-index: 9998; border-radius: 50%;
+            transform: translate(-50%, -50%); transition: width 0.2s, height 0.2s, background-color 0.2s;
+            mix-blend-mode: difference;
+        }
+        body:hover .cursor-outline { opacity: 1; }
+        a:hover ~ .cursor-outline, button:hover ~ .cursor-outline, .project-card:hover ~ .cursor-outline {
+            width: 60px; height: 60px; background-color: rgba(255, 255, 255, 1); border-color: transparent;
+        }
+
+        /* Modal Transitions */
+        .modal-overlay { opacity: 0; pointer-events: none; transition: opacity 0.4s ease; }
+        .modal-overlay.open { opacity: 1; pointer-events: auto; }
+        .modal-content { transform: translateY(50px) scale(0.95); opacity: 0; transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+        .modal-overlay.open .modal-content { transform: translateY(0) scale(1); opacity: 1; }
+
+        /* Reveals */
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        
+        /* Image Hover */
+        .project-img { transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+        .project-card:hover .project-img { transform: scale(1.03); }
+        
+        /* Background Noise */
+        .noise {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none; z-index: -1; opacity: 0.05;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-white selection:text-black">
+
+    <div class="noise"></div>
+    <div class="cursor-dot hidden md:block" id="cursor-dot"></div>
+    <div class="cursor-outline hidden md:block" id="cursor-outline"></div>
+
+    <!-- Navegação -->
+    <nav class="fixed w-full z-50 top-0 px-6 py-6 md:px-12 flex justify-between items-center backdrop-blur-md border-b border-white/5 bg-void/80">
+        <a href="#" class="font-display font-bold text-xl tracking-tighter hover:opacity-70 transition-opacity lowercase">
+            thesvio<span class="text-gray-500">.design</span>
+        </a>
+        <div class="hidden md:flex gap-8 font-display text-xs uppercase tracking-widest text-gray-400">
+            <a href="#work" class="hover:text-white transition-colors">Portfólio</a>
+            <a href="#stack" class="hover:text-white transition-colors">Ferramentas</a>
+            <a href="#contact" class="hover:text-white transition-colors">Contato</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative min-h-screen flex flex-col justify-center items-center text-center px-4 pt-20 overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-white opacity-[0.04] rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-6xl">
+            <div class="reveal inline-block px-3 py-1 mb-8 border border-white/20 rounded-full bg-white/5 backdrop-blur-md">
+                <span class="font-mono text-[10px] md:text-xs uppercase tracking-widest text-gray-300">Savio Castelo • Visual Director & Marketing Strategist</span>
+            </div>
+            
+            <h1 class="reveal font-display text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-none mb-8">
+                <span class="text-white block">DESIGN DE</span>
+                <span class="block text-stroke text-transparent bg-clip-text bg-gradient-to-b from-gray-500 to-transparent opacity-60">IMPACTO</span>
+            </h1>
+
+            <p class="reveal font-sans text-gray-400 text-lg md:text-2xl max-w-3xl mx-auto leading-relaxed font-light">
+                Especialista em transformar marcas através de Design Gráfico, Motion Graphics e Estratégia de Marketing. Da concepção estática à animação fluida, entregando narrativas visuais que unem técnica e criatividade.
+            </p>
+            
+            <div class="reveal mt-12 flex flex-col md:flex-row justify-center gap-6">
+                <a href="#work" class="px-10 py-4 bg-white text-black font-display font-bold text-sm uppercase tracking-wider rounded-sm hover:scale-105 transition-transform">
+                    Explorar Projetos
+                </a>
+                <a href="#contact" class="px-10 py-4 border border-white/20 text-white font-display font-bold text-sm uppercase tracking-wider rounded-sm hover:bg-white/10 transition-colors">
+                    Fale Comigo
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tech Stack Marquee -->
+    <section id="stack" class="py-8 border-y border-white/5 bg-charcoal/30 overflow-hidden relative z-20">
+        <div class="flex whitespace-nowrap animate-marquee">
+            <div class="flex gap-16 items-center px-8 font-display text-4xl md:text-5xl font-bold text-white/10 uppercase tracking-tighter select-none">
+                <span>Adobe After Effects</span> <span>•</span> <span class="text-white/30">Blender 3D</span> <span>•</span>
+                <span>Adobe Premiere</span> <span>•</span> <span class="text-white/30">DaVinci Resolve</span> <span>•</span>
+                <span>React / Next.js</span> <span>•</span> <span>FL Studio</span> <span>•</span>
+                <span>Adobe Photoshop</span> <span>•</span> <span>Adobe Illustrator</span> <span>•</span>
+                
+                <!-- Duplicate -->
+                <span>Adobe After Effects</span> <span>•</span> <span class="text-white/30">Blender 3D</span> <span>•</span>
+                <span>Adobe Premiere</span> <span>•</span> <span class="text-white/30">DaVinci Resolve</span> <span>•</span>
+                <span>React / Next.js</span> <span>•</span> <span>FL Studio</span> <span>•</span>
+                <span>Adobe Photoshop</span> <span>•</span> <span>Adobe Illustrator</span> <span>•</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Projetos -->
+    <section id="work" class="relative py-32 px-4 md:px-12 max-w-[1600px] mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-24 reveal border-b border-white/10 pb-6">
+            <div>
+                <h2 class="font-display text-4xl md:text-6xl font-bold">Projetos Recentes</h2>
+                <p class="text-gray-500 mt-2 font-mono text-sm">Direção de Arte • Motion • 3D • Marketing</p>
+            </div>
+        </div>
+        
+        <div id="project-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Projetos injetados aqui via JS -->
+        </div>
+    </section>
+
+    <!-- Modal Template -->
+    <div id="project-modal" class="modal-overlay fixed inset-0 z-[60] flex items-center justify-center p-0 md:p-8 bg-black/90 backdrop-blur-xl">
+        <div class="modal-content w-full max-w-7xl h-full md:h-[90vh] bg-charcoal border border-white/10 overflow-hidden flex flex-col md:flex-row shadow-2xl relative">
+            
+            <button onclick="closeModal()" class="absolute top-6 right-6 z-30 w-12 h-12 flex items-center justify-center rounded-full bg-black/50 hover:bg-white hover:text-black border border-white/20 transition-all">
+                <i class="ph ph-x text-2xl"></i>
+            </button>
+
+            <!-- Lado da Mídia -->
+            <div class="w-full md:w-3/4 h-[40vh] md:h-full bg-black relative flex items-center justify-center group">
+                <img id="modal-image" src="" class="w-full h-full object-cover opacity-90 absolute inset-0 transition-opacity duration-300">
+                <iframe id="modal-video" src="" class="w-full h-full absolute inset-0 hidden" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none mix-blend-overlay"></div>
+            </div>
+
+            <!-- Lado das Informações -->
+            <div class="w-full md:w-1/4 h-[60vh] md:h-full p-8 md:p-10 flex flex-col bg-charcoal border-l border-white/5 overflow-y-auto">
+                <div class="mb-auto">
+                    <span id="modal-category" class="font-mono text-xs text-silver uppercase tracking-widest mb-4 block border-b border-white/10 pb-4">Categoria</span>
+                    <h2 id="modal-title" class="font-display text-3xl md:text-4xl font-bold mb-6 leading-none tracking-tight">Título</h2>
+                    
+                    <div class="space-y-8">
+                        <div>
+                            <h4 class="font-mono text-[10px] uppercase tracking-widest text-gray-500 mb-2">O Projeto</h4>
+                            <p id="modal-desc" class="text-gray-300 text-sm leading-relaxed font-light">
+                                Descrição...
+                            </p>
+                        </div>
+
+                        <!-- Botão Link Externo -->
+                        <div id="modal-link-container" class="hidden">
+                             <a id="modal-link-btn" href="#" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 bg-white text-black font-display font-bold text-xs uppercase tracking-widest hover:bg-silver transition-colors">
+                                <span>Ver Online</span>
+                                <i class="ph-bold ph-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 space-y-6">
+                    <div>
+                        <h4 class="font-mono text-[10px] uppercase tracking-widest text-gray-500 mb-2">Stack Tecnológico</h4>
+                        <div id="modal-tech-list" class="flex flex-wrap gap-2"></div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-mono text-[10px] uppercase tracking-widest text-gray-500 mb-2">Data de Entrega</h4>
+                        <p id="modal-date" class="font-display text-xl">2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé Minimalista -->
+    <footer id="contact" class="py-32 px-6 relative text-center bg-black">
+        <div class="max-w-4xl mx-auto reveal">
+            <p class="text-gray-500 mb-8 font-mono uppercase tracking-widest text-xs">Tem um desafio complexo?</p>
+            <h2 class="font-display text-5xl md:text-9xl font-bold mb-12 tracking-tighter hover:text-white/80 transition-colors cursor-pointer">
+                <a href="mailto:contact@thesvio.design">VAMOS CONVERSAR</a>
+            </h2>
+            
+            <div class="flex justify-center gap-12 text-3xl text-white/50">
+                <a href="https://instagram.com/thesvio" target="_blank" class="hover:text-white transition-all hover:scale-110"><i class="ph ph-instagram-logo"></i></a>
+                <a href="https://linkedin.com/in/savio591" target="_blank" class="hover:text-white transition-all hover:scale-110"><i class="ph ph-linkedin-logo"></i></a>
+            </div>
+
+            <div class="mt-24 text-xs text-gray-600 font-mono">
+                &copy; 2025 Savio Castelo. All rights reserved. <br>
+                Macapá, Brasil • <span id="time">00:00</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // DADOS DO PROJETO
+        const projectsData = [
+            // 1. Nutriama (1 col)
+            {
+                id: 5,
+                title: "Dia das Mães Nutriama",
+                category: "Social Media Marketing",
+                image: "e3eb77c77e1dd143e385b23b1395d154b844449b.png",
+                description: "Como Assistente de Marketing no Grupo Nutriama, desenvolvi a estratégia visual para esta campanha de mídia social. O foco foi a conexão emocional através de iluminação quente e metáforas visuais, alinhando o design aos objetivos de engajamento da marca.",
+                date: "Maio 2023",
+                tech: ["Photoshop", "Estratégia de Marketing"],
+                colSpan: ""
+            },
+            // 2. Larissa Costa (2 cols - White BG)
+            {
+                id: 6,
+                title: "Larissa Costa Beauty",
+                category: "Identidade Visual",
+                image: "90cee6d817eb3aaa368768f1a32a1b20141600b1.png",
+                description: "Branding minimalista para o setor de beleza. O símbolo funde as ferramentas de trabalho (alicate/lixa) com o conceito de cuidado (coração), criando uma marca memorável e funcional.",
+                date: "Set 2023",
+                tech: ["Illustrator", "Brand Strategy"],
+                colSpan: "lg:col-span-2",
+                isWhiteBg: true
+            },
+            // 3. App Maracá (2 cols - Video - ATUALIZADO)
+            {
+                id: 4,
+                title: "Campanha App Maracá",
+                category: "Direção de Arte & Motion",
+                image: "1883147985-11077a17be25182bea2d866a0b1219d774516af8e5c9fd900c38798aa45d0ce8-d.jpg",
+                videoUrl: "https://player.vimeo.com/video/969722442",
+                description: "Como parte integrante do time de Marketing do Grupo Nutriama, fui responsável pela direção de arte e motion design desta campanha. Participei do desenvolvimento do conceito e executei a animação, integrando 3D e pós-produção para comunicar as funcionalidades do app de forma envolvente.",
+                date: "Fev 2024",
+                tech: ["After Effects", "Blender 3D", "FL Studio", "Photoshop", "Illustrator", "Marketing"],
+                colSpan: "lg:col-span-2"
+            },
+            // 4. Retro OS (1 col - Vertical Video)
+            {
+                id: 2,
+                title: "Retro OS Invite",
+                category: "Motion Design",
+                image: "1883146621-e801624506106e831b53070f13e154d2f4141823cd9eca4c744a6196f3a45ae0-d.jpg",
+                videoUrl: "https://player.vimeo.com/video/969721305",
+                description: "Uma imersão na estética Y2K e Vaporwave. Simulação de interfaces de sistemas operacionais antigos (Windows 95/98) com glitch art e tipografia pixelada para um convite digital único.",
+                date: "Mar 2024",
+                tech: ["After Effects", "Figma", "DaVinci Resolve"],
+                colSpan: ""
+            },
+            // 5. Sebrae & Cejusc (2 cols - Video)
+            {
+                id: 8,
+                title: "Sebrae & Cejusc",
+                category: "Vídeo Institucional",
+                image: "1883148082-b1e6ea92b01caf5c39ce13241520468d26f1b03848a2d55ced55e18fa820c103-d.jpg",
+                videoUrl: "https://player.vimeo.com/video/969719571",
+                description: "Motion Graphics corporativo para anunciar uma parceria estratégica governamental. Foco em clareza da informação, transições fluidas e respeito rigoroso ao brandbook das duas instituições.",
+                date: "Maio 2024",
+                tech: ["Premiere", "After Effects", "DaVinci Resolve"],
+                colSpan: "lg:col-span-2",
+                isWhiteBg: true
+            },
+             // 6. GymStation (1 col - Pixel Art)
+             {
+                id: 1,
+                title: "GymStation",
+                category: "Identidade Visual",
+                image: "Screenshot-2025-07-24-125110.png",
+                description: "Rebranding fitness com inspiração em cultura Gamer/Pixel Art. O logo cria uma dualidade visual entre um controle de videogame e um haltere de academia.",
+                date: "Jul 2024",
+                tech: ["Illustrator", "Photoshop"],
+                colSpan: ""
+            },
+            // 7. Candy Cosméticos (1 col)
+            {
+                id: 9,
+                title: "Candy Cosméticos",
+                category: "Campanha Promocional",
+                image: "maes-candy.jpg",
+                description: "Conceito visual para campanha sazonal. Ilustrações line art e tipografia script para evocar sofisticação e delicadeza.",
+                date: "Maio 2024",
+                tech: ["Photoshop", "Illustrator"],
+                colSpan: ""
+            },
+            // 8. Nutriama Landing Page (2 cols)
+            {
+                id: 10,
+                title: "Landing Page Nutriama",
+                category: "UI/UX & Front-end",
+                image: "image_459724.jpg", // Imagem atualizada
+                liveUrl: "https://nutriama2022.vercel.app/",
+                description: "Desenvolvimento completo (Design + Code) da Landing Page institucional do Grupo Nutriama. Atuando dentro do setor de Marketing, projetei a interface no Figma e desenvolvi o front-end em React/Next.js, garantindo alinhamento com a identidade corporativa e performance.",
+                date: "Dez 2022",
+                tech: ["React", "Next.js", "SASS", "GSAP", "Lottie", "Storybook", "Figma", "Marketing"],
+                colSpan: "lg:col-span-2"
+            },
+            // 9. Nutrilog (1 col)
+            {
+                id: 7,
+                title: "Nutrilog",
+                category: "Design Corporativo",
+                image: "Dia-do-motorista.jpg",
+                description: "Peça desenvolvida durante minha atuação como Assistente de Marketing no Grupo Nutriama. Composição fotográfica e tratamento de imagem para o braço logístico do grupo, focando em transmitir robustez e confiança.",
+                date: "Jul 2023",
+                tech: ["Photoshop", "Marketing Corporativo"],
+                colSpan: ""
+            },
+            // 10. Sukita (1 col)
+            {
+                id: 3,
+                title: "Campanha Sukita",
+                category: "Varejo & Manipulação",
+                image: "sukita-flyer-oferta.jpg",
+                description: "High-end retouching para varejo. Criação de 'Appetite Appeal' através de manipulação de líquidos e iluminação de estúdio digital.",
+                date: "Nov 2023",
+                tech: ["Photoshop"],
+                colSpan: ""
+            }
+        ];
+
+        // RENDER GRID
+        const grid = document.getElementById('project-grid');
+        
+        projectsData.forEach(project => {
+            const card = document.createElement('div');
+            card.className = `reveal project-card group cursor-pointer relative overflow-hidden border border-white/5 ${project.colSpan || ''}`;
+            card.onclick = () => openModal(project.id);
+
+            const bgClass = project.isWhiteBg ? 'bg-white' : 'bg-charcoal';
+            const imgClass = project.isWhiteBg ? 'object-contain p-12' : 'object-cover';
+            
+            // Dynamic Aspect Ratio
+            let aspectClass = 'aspect-square';
+            if (project.colSpan) aspectClass = 'aspect-[2/1]';
+            if (project.category.includes('Motion') || project.category.includes('UI')) aspectClass = 'aspect-[4/5]';
+            if (project.title === 'Nutrilog') aspectClass = 'aspect-[4/3]';
+            if (project.title === 'Landing Page Nutriama' || project.title === 'Campanha App Maracá' || project.title === 'Sebrae & Cejusc') {
+                aspectClass = 'aspect-video'; 
+            }
+
+            card.innerHTML = `
+                <div class="w-full ${aspectClass} ${bgClass} relative">
+                    <img src="./assets/${project.image}" alt="${project.title}" class="project-img w-full h-full ${imgClass}">
+                    
+                    ${project.videoUrl ? '<div class="absolute top-4 right-4 z-20 bg-black/60 backdrop-blur-md p-3 rounded-full border border-white/10 shadow-lg group-hover:scale-110 transition-transform"><i class="ph-fill ph-play text-white text-lg"></i></div>' : ''}
+                    ${project.liveUrl ? '<div class="absolute top-4 right-4 z-20 bg-white text-black p-3 rounded-full shadow-lg group-hover:scale-110 transition-transform"><i class="ph-bold ph-arrow-up-right text-lg"></i></div>' : ''}
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                        <span class="text-[10px] font-mono text-silver uppercase tracking-widest mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">${project.category}</span>
+                        <h3 class="font-display text-2xl md:text-3xl font-bold text-white translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">${project.title}</h3>
+                    </div>
+                </div>
+            `;
+            grid.appendChild(card);
+        });
+
+        // MODAL LOGIC
+        const modal = document.getElementById('project-modal');
+        const mTitle = document.getElementById('modal-title');
+        const mCat = document.getElementById('modal-category');
+        const mImg = document.getElementById('modal-image');
+        const mVideo = document.getElementById('modal-video');
+        const mDesc = document.getElementById('modal-desc');
+        const mDate = document.getElementById('modal-date');
+        const mTechList = document.getElementById('modal-tech-list');
+        const mLinkContainer = document.getElementById('modal-link-container');
+        const mLinkBtn = document.getElementById('modal-link-btn');
+
+        function openModal(id) {
+            const project = projectsData.find(p => p.id === id);
+            if(!project) return;
+
+            mTitle.textContent = project.title;
+            mCat.textContent = project.category;
+            mDesc.textContent = project.description;
+            mDate.textContent = project.date;
+            
+            // Tech Tags
+            mTechList.innerHTML = '';
+            if(Array.isArray(project.tech)){
+                 project.tech.forEach(t => {
+                    mTechList.innerHTML += `<span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] font-mono text-gray-300 uppercase">${t}</span>`;
+                });
+            } else {
+                 mTechList.innerHTML += `<span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] font-mono text-gray-300 uppercase">${project.tech}</span>`;
+            }
+           
+            // Live Link Logic
+            if(project.liveUrl) {
+                mLinkContainer.classList.remove('hidden');
+                mLinkBtn.href = project.liveUrl;
+            } else {
+                mLinkContainer.classList.add('hidden');
+            }
+
+            // Media Logic
+            if (project.videoUrl) {
+                mVideo.src = project.videoUrl;
+                mVideo.classList.remove('hidden');
+                mImg.classList.add('hidden');
+            } else {
+                mVideo.src = "";
+                mVideo.classList.add('hidden');
+                mImg.src = `./assets/${project.image}`;
+                mImg.classList.remove('hidden');
+            }
+
+            modal.classList.remove('hidden');
+            setTimeout(() => modal.classList.add('open'), 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.classList.remove('open');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                mVideo.src = "";
+            }, 400);
+            document.body.style.overflow = 'auto';
+        }
+
+        modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+
+        // TIME
+        function updateTime() {
+            const now = new Date();
+            try {
+                document.getElementById('time').textContent = now.toLocaleTimeString('pt-BR', { timeZone: 'America/Sao_Paulo', hour: '2-digit', minute: '2-digit' });
+            } catch(e) {
+                document.getElementById('time').textContent = now.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+            }
+        }
+        setInterval(updateTime, 1000); updateTime();
+
+        // CURSOR
+        const cursorDot = document.getElementById('cursor-dot');
+        const cursorOutline = document.getElementById('cursor-outline');
+        window.addEventListener('mousemove', function(e) {
+            const posX = e.clientX; const posY = e.clientY;
+            cursorDot.style.left = `${posX}px`; cursorDot.style.top = `${posY}px`;
+            cursorOutline.animate({ left: `${posX}px`, top: `${posY}px` }, { duration: 500, fill: "forwards" });
+        });
+
+        // OBSERVER
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
 </html>

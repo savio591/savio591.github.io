@@ -1,0 +1,83 @@
+Savio Castelo (thesvio) - Creative Director & Motion Designer
+
+Sobre
+
+Savio Castelo, conhecido profissionalmente como "thesvio" ou "Savil Experiments", é um Creative Director, Motion Designer e Estrategista de Marketing baseado em Macapá, Brasil. Ele combina habilidades técnicas avançadas em design gráfico e motion com uma visão estratégica de negócios, adquirida através de sua experiência como Assistente de Marketing no Grupo Nutriama e passagens por agências e campanhas políticas.
+
+Seu trabalho é caracterizado por uma abordagem multidisciplinar, integrando:
+
+Identidade Visual de Impacto
+
+Motion Graphics Fluido (2D e 3D)
+
+Sound Design Autoral
+
+Desenvolvimento Front-end (React/Next.js)
+
+Experiência Profissional Relevante
+
+Campanha Dr. Furlan (Prefeito de Macapá - 2024)
+
+Cargos: Editor de Vídeo, Motion Designer e Colorista.
+
+Atuação: Responsável pela pós-produção de materiais audiovisuais estratégicos para a campanha vitoriosa do Dr. Furlan. Seu papel envolveu edição ágil, motion graphics para dinamizar a comunicação e color grading para garantir a consistência visual e o tom adequado da campanha.
+
+M2 Comunicação
+
+Atuação: Experiência em agência de comunicação, desenvolvendo soluções visuais e criativas para diversos clientes.
+
+Grupo Nutriama (Marketing & Design)
+
+Cargo: Assistente de Marketing.
+
+Atuação: Atuou diretamente no departamento de marketing, participando ativamente do desenvolvimento estratégico e visual de campanhas para as marcas do grupo (Nutriama, Maracá e Nutrilog).
+
+Stack Tecnológico
+
+Savio domina um conjunto diversificado de ferramentas criativas e técnicas:
+
+Motion & Vídeo: Adobe After Effects, Adobe Premiere, DaVinci Resolve.
+
+3D: Blender.
+
+Design: Adobe Photoshop, Adobe Illustrator, Figma.
+
+Áudio: FL Studio.
+
+Desenvolvimento: React, Next.js, SASS, GSAP, Storybook.
+
+Projetos de Destaque
+
+Grupo Nutriama
+
+Landing Page Nutriama: Design (Figma) e Desenvolvimento Full-stack (React/Next.js) do site institucional.
+
+Campanha App Maracá: Direção de arte, motion graphics (After Effects + Blender) e sound design para o lançamento do aplicativo de delivery.
+
+Nutrilog: Design corporativo focado em robustez para o braço logístico.
+
+Campanha Dia das Mães: Estratégia visual focada em conexão emocional.
+
+Parcerias Institucionais
+
+Sebrae & Cejusc: Vídeo institucional em motion graphics comunicando uma parceria governamental estratégica.
+
+Branding & Identidade
+
+GymStation: Rebranding de academia com conceito "Pixel Art" e trocadilho "Gamestation".
+
+Larissa Costa Beauty: Identidade visual minimalista para o setor de beleza.
+
+Candy Cosméticos: Campanha promocional com estética line art sofisticada.
+
+Projetos Experimentais
+
+Retro OS Invite: Convite em vídeo vertical explorando a estética Y2K/Vaporwave e interfaces de sistemas operacionais antigos.
+
+Contato
+
+Email: contact@thesvio.design
+
+Instagram: https://instagram.com/thesvio
+
+LinkedIn: https://linkedin.com/in/savio591
