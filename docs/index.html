@@ -67,7 +67,7 @@
     
     <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-
+    
     <script>
         tailwind.config = {
             theme: {
@@ -97,6 +97,7 @@
         }
     </script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <style>
         body {
             background-color: #050505;
@@ -170,7 +171,7 @@
     <!-- Hero Section -->
     <header class="relative min-h-screen flex flex-col justify-center items-center text-center px-4 pt-20 overflow-hidden">
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-white opacity-[0.04] rounded-full blur-[120px] pointer-events-none"></div>
-
+        <div id="webgl-container" class="absolute inset-0 z-0 opacity-60 mix-blend-screen pointer-events-none"></div>
         <div class="relative z-10 max-w-6xl">
             <div class="reveal inline-block px-3 py-1 mb-8 border border-white/20 rounded-full bg-white/5 backdrop-blur-md">
                 <span class="font-mono text-[10px] md:text-xs uppercase tracking-widest text-gray-300">Savio Castelo • Visual Director & Marketing Strategist</span>
@@ -552,5 +553,134 @@
         }, { threshold: 0.1 });
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const container = document.getElementById('webgl-container');
+        if (!container) return;
+
+        // --- SETUP BÁSICO ---
+        const scene = new THREE.Scene();
+        // Fog denso para esconder o "fim" do grid e dar profundidade
+        scene.fog = new THREE.FogExp2(0x050505, 0.15); 
+
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100);
+        // Posicionando a câmera baixa e levemente inclinada para ver o horizonte
+        camera.position.set(0, 3, 10);
+        camera.lookAt(0, 0, 0);
+
+        const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        container.appendChild(renderer.domElement);
+
+        // --- O GRID (TERRENO) ---
+        // PlaneGeometry(Largura, Altura, SegmentosW, SegmentosH)
+        // Segmentos altos (60) são necessários para a distorção ficar suave
+        const geometry = new THREE.PlaneGeometry(60, 60, 60, 60);
+        
+        // Material "Neon"
+        const material = new THREE.MeshBasicMaterial({ 
+            color: 0x00ffff, // Ciano (Tente 0xff00ff para Magenta)
+            wireframe: true,
+            transparent: true,
+            opacity: 0.25
+        });
+
+        const plane = new THREE.Mesh(geometry, material);
+        plane.rotation.x = -Math.PI / 2; // Deitar o plano
+        scene.add(plane);
+
+        // --- INTERAÇÃO ---
+        const raycaster = new THREE.Raycaster();
+        const mouse = new THREE.Vector2(9999, 9999); // Inicia longe para não distorcer no load
+        const planeIntersect = new THREE.Plane(new THREE.Vector3(0, 1, 0), 0); // Plano imaginário para o mouse
+
+        // Guardar posições originais dos vértices
+        const originalPositions = geometry.attributes.position.array.slice();
+
+        document.addEventListener('mousemove', (event) => {
+            // Normalizar mouse (-1 a 1) para Raycaster
+            mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+            mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+        });
+
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        // --- ANIMAÇÃO ---
+        const clock = new THREE.Clock();
+
+        function animate() {
+            requestAnimationFrame(animate);
+            const time = clock.getElapsedTime();
+
+            // 1. Movimento Infinito (Efeito Esteira)
+            // Movemos o plano em Z. Quando ele anda 1 unidade (tamanho da célula),
+            // resetamos para 0. Isso cria a ilusão de movimento infinito sem mover a geometria para longe.
+            const speed = 2.5;
+            const gridSize = 1; // Baseado na geometria (60 largura / 60 segmentos = 1)
+            
+            // O resto da divisão (%) garante o loop
+            plane.position.z = (time * speed) % gridSize; 
+
+            // 2. Calcular Posição do Mouse no Mundo 3D
+            raycaster.setFromCamera(mouse, camera);
+            const targetPoint = new THREE.Vector3();
+            raycaster.ray.intersectPlane(planeIntersect, targetPoint);
+
+            // Ajustar o ponto de colisão para compensar o movimento da "esteira" do grid
+            // Se não fizermos isso, a montanha "desliza" junto com o grid
+            targetPoint.z -= plane.position.z;
+
+            // 3. Deformar os Vértices
+            const positions = plane.geometry.attributes.position;
+            const count = positions.count;
+
+            for (let i = 0; i < count; i++) {
+                // Recuperar Z original (que agora é Y no mundo por causa da rotação)
+                // Nota: PlaneGeometry é criado em XY. Ao rotacionar X -90, o eixo Z local vira Y mundo.
+                // Mas aqui manipulamos o array "position" local. Z é a altura/profundidade local.
+                
+                const px = originalPositions[i * 3];     // X local
+                const py = originalPositions[i * 3 + 1]; // Y local
+                const pz = originalPositions[i * 3 + 2]; // Z local (flat = 0)
+
+                // Calcular distância do vértice até o mouse
+                // Precisamos converter coordenadas locais para mundo para comparar com targetPoint?
+                // Como o plane está em (0,0,0) basicamente, X local ≈ X mundo. 
+                // Y local (que virou Z mundo) precisa ser comparado com targetPoint.z
+                
+                // Distância simples 2D no plano
+                const dx = px - targetPoint.x;
+                const dy = py - (-targetPoint.z); // Invertido porque Y local aponta para -Z mundo na rotação
+                const dist = Math.sqrt(dx * dx + dy * dy);
+
+                // Criar elevação baseada na proximidade (Montanha Digital)
+                let elevation = 0;
+                const radius = 8; // Tamanho da montanha
+                
+                if (dist < radius) {
+                    // Função Gaussiana simples para curva suave
+                    const force = (radius - dist) / radius;
+                    elevation = Math.pow(force, 2) * 5.0; // Altura da montanha (5.0)
+                    
+                    // Adicionar um pouco de "ruído" digital na montanha
+                    elevation += Math.sin(px * 5 + time * 10) * 0.2 * force;
+                }
+
+                // Aplicar elevação no eixo Z local (que é Y visualmente)
+                positions.setZ(i, pz + elevation);
+            }
+
+            positions.needsUpdate = true;
+            renderer.render(scene, camera);
+        }
+
+        animate();
+    });
+</script>
 </body>
 </html>
